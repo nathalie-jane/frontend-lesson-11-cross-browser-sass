@@ -130,3 +130,11 @@ body {
         @include text-meta-value
     }
 }
+
+/* -------------------------------------
+    PROJECT VISUAL
+---------------------------------------- */
+
+.project-visual__info {
+    @include text-body;
+}
