@@ -55,3 +55,31 @@ body {
         @include text-quote;
     }
 }
+
+/* -------------------------------------
+    SERVICES
+---------------------------------------- */
+
+.services {
+
+    &__intro {
+        @include text-lead;
+    }
+
+    &__item {
+        @include text-menu;
+    }
+
+    &__link {
+        @include link-style;
+        @include hover-underline;
+
+        &::after {
+            height: 1px;
+        }
+    }
+
+    &__item:hover &__link::after {
+        transform: scaleX(1);
+    }
+}
