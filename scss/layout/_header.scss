@@ -1,0 +1,15 @@
+/* ============================================
+    HEADER
+    Site header layout and styles 
+=============================================== */
+
+@use "abstracts/variables" as *;
+
+.site-header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    margin: 0;
+    padding: $space-6 0 $space-4 0;
+    background-color: $color-base;
+}

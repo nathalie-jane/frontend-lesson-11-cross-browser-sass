@@ -1,0 +1,52 @@
+/* ============================================
+    VARIABLES
+    Shared style tokens
+=============================================== */
+
+/* --------------------------------------
+    TYPOGRAPHY
+----------------------------------------- */
+
+$font-primary: "Mulish", sans-serif;
+
+$font-size-sm: 1rem;
+$font-size-md: 1.13rem;
+$font-size-lg: 1.38rem;
+$font-size-xl: 1.75rem;
+$font-size-xxl: 2.5rem;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+/* --------------------------------------
+    COLORS
+----------------------------------------- */
+
+$color-base: #FFFFFF;
+$color-primary: #111111;
+$color-secondary: rgba(17, 17, 17, 0.8);
+$color-tertiary: rgba(17, 17, 17, 0.6);
+$color-accent: #4A4FF2;
+$color-divider-primary: #979797;
+$color-divider-secondary: #D8D8D8;
+$color-divider-tertiary: rgba(151, 151, 151, 0.3);
+$color-icon: #000000;
+$color-meta: rgba(17, 17, 17, 0.5);
+$color-btn-active: #5c61f3;
+
+/* --------------------------------------
+    SPACING
+----------------------------------------- */
+
+$space-1: 8px;
+$space-2: 16px;
+$space-3: 20px;
+$space-4: 30px;
+$space-5: 32px;
+$space-6: 48px;
+$space-7: 64px;
+$space-8: 72px;
+$space-9: 96px;
+$space-10: 112px;
+$space-11: 128px;
+$space-12: 144px;

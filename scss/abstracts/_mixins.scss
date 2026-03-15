@@ -1,0 +1,75 @@
+@use "abstracts/variables" as *;
+
+/* =================================================
+    MIXINS
+    Reusable style patterns 
+==================================================== */
+
+/* ----------------------------------
+    LINKS
+------------------------------------- */
+
+/* Removes default link styling */
+@mixin link-style {
+    text-decoration: none;
+    color: inherit;
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+/* ----------------------------------
+    LISTS
+------------------------------------- */
+
+/* Horizontal list used for navigation bar */
+@mixin horizontal-list {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    gap: $space-5;
+}
+
+/* Removes default list styling and spacing */
+@mixin list-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ----------------------------------
+    INTERACTIONS
+------------------------------------- */
+
+/* Animated underline shown when hovering over links */
+@mixin hover-underline {
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 2px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: $color-accent;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.2s ease-out;
+    }
+}
+
+/* ----------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+
+/* Navigation link text style */
+@mixin text-nav {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    letter-spacing: -0.019em;
+    color: $color-primary;
+}

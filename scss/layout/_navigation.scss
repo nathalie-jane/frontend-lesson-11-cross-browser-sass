@@ -1,0 +1,22 @@
+/* ============================================
+    NAVIGATION
+    Site navigation layout and styles
+=============================================== */
+
+@use "abstracts/mixins" as *;
+
+.site-nav {
+    &__list {
+        @include horizontal-list;
+        @include list-style;
+    }
+
+    &__logo {
+        width: 90px;
+        height: 19px;
+    }
+
+    &__item--logo {
+        margin-right: auto;
+    }
+}

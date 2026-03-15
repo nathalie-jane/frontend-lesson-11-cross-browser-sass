@@ -1,0 +1,32 @@
+/* =================================================
+    TYPOGRAPHY
+    Text styles for all sections and components
+==================================================== */
+
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+/* -------------------------------------
+    BASE
+---------------------------------------- */
+
+body {
+    font-family: $font-primary;
+}
+
+/* -------------------------------------
+    SITE NAVIGATION
+---------------------------------------- */
+
+.site-nav {
+    @include text-nav;
+
+    &__link {
+        @include link-style;
+        @include hover-underline;
+    }
+
+    &__item:hover &__link::after {
+        transform: scaleX(1);
+    }
+}

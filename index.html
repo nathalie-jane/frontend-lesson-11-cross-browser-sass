@@ -4,10 +4,42 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Genesis - Home</title>
+
 		<!-- Standardizes default styles across different browsers -->
-		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="/css/normalize.css" />
+
 		<!-- Main stylesheet -->
 		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- Mulish font family -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
 	</head>
-	<body></body>
+	<body>
+		<div class="page">
+			<!-- =========================================================
+					HEADER
+					Site logo and main navigation
+			============================================================== -->
+			<header class="site-header">
+				<nav class="site-nav site-nav--header">
+					<ul class="site-nav__list">
+						<li class="site-nav__item site-nav__item--logo">
+							<a class="site-nav__link site-nav__link--logo" href="#">
+								<img class="site-nav__logo" src="images/logo/brand-logo.svg" alt="Genesis Logo" />
+							</a>
+						</li>
+						<li class="site-nav__item site-nav__item--projects">
+							<a class="site-nav__link" href="pages/projects.html">Projects</a>
+						</li>
+						<li class="site-nav__item site-nav__item--contact">
+							<a class="site-nav__link" href="pages/contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- END Header -->
+		</div>
+	</body>
 </html>
