@@ -40,3 +40,64 @@
         }
     }
 }
+
+/* --------------------------------------
+    VISUAL
+    Masonry grid layout for images
+----------------------------------------- */
+
+.visual__grid {
+    @include masonry-grid;
+
+    &-item--01 {
+        grid-area: 1 / 1 / span 7 / span 3;
+    }
+
+    &-item--02 {
+        grid-area: 1 / 4 / span 6 / span 3;
+    }
+
+    &-item--03 {
+        grid-area: 1 / 7 / span 10 / span 3;
+    }
+
+    &-item--04 {
+        grid-area: 8 / 1 / span 8 / span 3;
+    }
+
+    &-item--05 {
+        grid-area: 7 / 4 / span 7 / span 3;
+    }
+
+    &-item--06 {
+        grid-area: 11 / 7 / span 7 / span 3;
+    }
+
+    &-item--07 {
+        grid-area: 16 / 1 / span 8 / span 3;
+    }
+
+    &-item--08 {
+        grid-area: 14 / 4 / span 9 / span 3;
+    }
+
+    &-item--09 {
+        grid-area: 18 / 7 / span 9 / span 3;
+    }
+
+    &-item--10 {
+        grid-area: 24 / 1 / span 9 / span 3;
+    }
+
+    &-item--11 {
+        grid-area: 23 / 4 / span 10 / span 3;
+    }
+
+    &-item--12 {
+        grid-area: 27 / 7 / span 6 / span 3;
+    }
+
+    &-img {
+        @include image-fill;
+    }
+}

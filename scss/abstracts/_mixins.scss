@@ -16,6 +16,25 @@
     column-gap: $space-4;
 }
 
+/* Masonry-style grid layout used for images */
+@mixin masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    gap: $space-3;
+}
+
+/* ----------------------------------
+    MEDIA
+------------------------------------- */
+
+/* Makes images fill its container while maintaining its aspect ratio */
+@mixin image-fill {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* ----------------------------------
     LINKS
 ------------------------------------- */
@@ -131,4 +150,70 @@
     font-weight: $font-weight-bold;
     line-height: 1.36;
     color: $color-primary;
+}
+
+/* Service link text style */
+@mixin text-menu {
+    font-size: $font-size-md;
+    font-weight: $font-weight-normal;
+    color: $color-tertiary;
+    text-transform: capitalize;
+}
+
+/* Table heading */
+@mixin text-table-heading {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+}
+
+/* Table subheading */
+@mixin text-table-subheading {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+}
+
+/* Table lead text */
+@mixin text-table-lead {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    color: $color-primary;
+}
+
+/* Table body text */
+@mixin text-table-body {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    line-height: 1.63;
+    color: $color-tertiary;
+}
+
+/* Metadata label text */
+@mixin text-meta-label {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    color: $color-meta;
+}
+
+/* Metadata value text */
+@mixin text-meta-value {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    text-transform: capitalize;
+    color: $color-primary;
+}
+
+/* Form input text */
+@mixin text-form {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    color: $color-tertiary;
+}
+
+/* Button text */
+@mixin text-button {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    color: $color-base;
 }
