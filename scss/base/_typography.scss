@@ -30,3 +30,28 @@ body {
         transform: scaleX(1);
     }
 }
+
+/* -------------------------------------
+    HERO
+---------------------------------------- */
+
+.hero {
+
+    &__intro-kicker {
+        @include text-kicker;
+    }
+
+    &__intro-title {
+        @include text-display-primary;
+    }
+
+    &-accent {
+        color: $color-accent;
+    }
+}
+
+.hero__quote {
+    &-text {
+        @include text-quote;
+    }
+}

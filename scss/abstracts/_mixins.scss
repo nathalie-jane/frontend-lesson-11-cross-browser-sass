@@ -6,6 +6,17 @@
 ==================================================== */
 
 /* ----------------------------------
+    GRID
+------------------------------------- */
+
+/* 12-column grid layout used for page sections */
+@mixin layout-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: $space-4;
+}
+
+/* ----------------------------------
     LINKS
 ------------------------------------- */
 
@@ -71,5 +82,53 @@
     font-size: $font-size-md;
     font-weight: $font-weight-bold;
     letter-spacing: -0.019em;
+    color: $color-primary;
+}
+
+/* Primary large heading */
+@mixin text-display-primary {
+    font-size: $font-size-xxl;
+    line-height: 1.5;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+}
+
+/* Secondary large heading */
+@mixin text-display-secondary {
+    font-size: $font-size-xxl;
+    line-height: 1.38;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+}
+
+/* Body paragraph text */
+@mixin text-body {
+    font-size: $font-size-sm;
+    line-height: 1.63;
+    font-weight: $font-weight-normal;
+    color: $color-secondary;
+}
+
+/* Kicker text */
+@mixin text-kicker {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    letter-spacing: -0.019em;
+    color: $color-accent;
+}
+
+/* Quote text */
+@mixin text-quote {
+    font-size: $font-size-md;
+    font-weight: $font-weight-normal;
+    font-style: italic;
+    color: $color-tertiary;
+}
+
+/* Introductory text */
+@mixin text-lead {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+    line-height: 1.36;
     color: $color-primary;
 }

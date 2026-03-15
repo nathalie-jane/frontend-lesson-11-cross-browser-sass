@@ -1,0 +1,42 @@
+/* ============================================
+    INDEX
+    Home page layout
+=============================================== */
+
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+/* --------------------------------------
+    HERO
+    Intro text and quote
+----------------------------------------- */
+
+.hero {
+    @include layout-grid;
+    margin-block: $space-8 $space-12;
+
+    &__intro {
+        grid-column: 1 / span 7;
+
+        &-kicker {
+            padding-block-end: $space-5;
+        }
+    }
+
+    &__quote {
+        grid-column: 10 / span 3;
+        align-self: flex-end;
+        position: relative;
+        right: $space-5;
+
+        &-line {
+            width: 30px;
+            height: 2px;
+            background-color: $color-divider-primary;
+        }
+
+        &-text {
+            padding-block: $space-1 $space-4;
+        }
+    }
+}
