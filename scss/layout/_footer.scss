@@ -1,0 +1,26 @@
+/* ============================================
+    FOOTER
+    Site footer layout and styles
+=============================================== */
+
+.site-footer {
+    .site-nav {
+        &__item--contact {
+            flex-grow: 0.06;
+        }
+
+        &__icon {
+
+            &--dribbble,
+            &--instagram {
+                width: 15px;
+                height: 15px;
+            }
+
+            &--twitter {
+                width: 18px;
+                height: 14px;
+            }
+        }
+    }
+}
