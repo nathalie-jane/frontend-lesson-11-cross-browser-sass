@@ -138,3 +138,31 @@ body {
 .project-visual__info {
     @include text-body;
 }
+
+/* -------------------------------------
+    CONTACT
+---------------------------------------- */
+
+.contact {
+    &__title {
+        @include text-display-secondary;
+    }
+
+    &__intro {
+        @include text-body;
+    }
+}
+
+/* -------------------------------------
+    CONTACT FORM
+---------------------------------------- */
+
+.contact-form {
+    &__input {
+        @include text-form;
+    }
+
+    &__btn {
+        @include text-button;
+    }
+}
