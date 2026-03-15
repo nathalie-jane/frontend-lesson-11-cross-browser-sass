@@ -139,3 +139,55 @@
         }
     }
 }
+
+/* --------------------------------------
+    AWARDS
+    Awards and project information
+----------------------------------------- */
+
+.awards {
+    @include layout-grid;
+    @include section-divider;
+    row-gap: 80px;
+    margin-bottom: $space-10;
+    padding-block: $space-6;
+
+    &__org {
+        min-width: 140px;
+        grid-column: 1 / span 3;
+    }
+
+    &__category {
+        grid-column: 6 / span 2;
+        flex-basis: 136px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: $space-1;
+        grid-column: 6 / span 7;
+    }
+
+    &__project {
+        display: flex;
+        justify-content: space-between;
+        gap: $space-2;
+        flex-grow: 0.45;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: $space-1;
+            grid-column: 9 / span 3;
+            max-width: 184px;
+            width: 100%;
+            min-height: 110px;
+        }
+    }
+
+    &__divider {
+        @include content-divider;
+    }
+}

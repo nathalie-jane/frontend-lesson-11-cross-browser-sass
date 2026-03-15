@@ -83,3 +83,26 @@ body {
         transform: scaleX(1);
     }
 }
+
+/* -------------------------------------
+    AWARDS
+---------------------------------------- */
+
+.awards {
+    &__org {
+        @include text-table-heading
+    }
+
+    &__category {
+        @include text-table-subheading;
+    }
+
+    &__project-title,
+    &__year {
+        @include text-table-lead;
+    }
+
+    &__project-info {
+        @include text-table-body
+    }
+}

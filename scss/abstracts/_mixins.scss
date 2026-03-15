@@ -50,6 +50,24 @@
 }
 
 /* ----------------------------------
+    DIVIDERS
+------------------------------------- */
+
+/* Section divider with top and bottom border */
+@mixin section-divider {
+    border-top: 2px solid $color-divider-secondary;
+    border-bottom: 2px solid $color-divider-secondary;
+}
+
+/* Full-width divider */
+@mixin content-divider {
+    grid-column: 1 / span 12;
+    height: 2px;
+    border: none;
+    background: $color-divider-secondary;
+}
+
+/* ----------------------------------
     LISTS
 ------------------------------------- */
 
