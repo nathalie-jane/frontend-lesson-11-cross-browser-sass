@@ -110,6 +110,40 @@
     }
 }
 
+/* Focus underline animation used for form inputs */
+@mixin focus-underline {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $color-accent;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease-out;
+}
+
+/* ----------------------------------
+    BUTTONS
+------------------------------------- */
+
+/* Button styling with hover and focus states */
+@mixin button-style {
+    max-width: 125px;
+    width: 100%;
+    min-height: 50px;
+    border: none;
+    background-color: $color-accent;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        border: none;
+        background-color: $color-btn-active;
+    }
+}
+
 /* ----------------------------------
     TYPOGRAPHY
 ------------------------------------- */

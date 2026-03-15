@@ -1,0 +1,56 @@
+/* ============================================
+    PROJECTS
+    Project page layout
+=============================================== */
+
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+/* --------------------------------------
+    PROJECT DETAILS
+    Intro text and metadata
+----------------------------------------- */
+
+.project-details {
+    @include layout-grid;
+    margin-block: $space-8 $space-7;
+
+    &__title {
+        max-width: 495px;
+        width: 100%;
+        min-height: 130px;
+        margin-block-end: $space-2;
+        grid-column: 1 / span 6;
+    }
+
+    &__intro {
+        grid-column: 1 / span 7;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-inline-start: $space-2;
+        grid-column: 9 / span 4;
+        grid-row: 1 / span 2;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: $space-2;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-1;
+        padding-block-end: $space-2;
+        border-bottom: 1px solid $color-divider-tertiary;
+
+        &-label {
+            flex-basis: 128px;
+        }
+    }
+}

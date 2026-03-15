@@ -106,3 +106,27 @@ body {
         @include text-table-body
     }
 }
+
+/* -------------------------------------
+    PROJECT DETAILS
+---------------------------------------- */
+
+.project-details {
+    &__title {
+        @include text-display-secondary;
+    }
+
+    &__intro {
+        @include text-body;
+    }
+}
+
+.project-details__row {
+    &-label {
+        @include text-meta-label;
+    }
+
+    &-value {
+        @include text-meta-value
+    }
+}
