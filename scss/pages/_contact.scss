@@ -77,3 +77,18 @@
     }
 
 }
+
+/* --------------------------------------
+    CONTACT VISUAL
+    Full-width image
+----------------------------------------- */
+
+.contact-visual {
+    margin-block-end: $space-9;
+
+    &__main-img {
+        width: 100%;
+        height: auto;
+        grid-column: 1 / span 12;
+    }
+}
