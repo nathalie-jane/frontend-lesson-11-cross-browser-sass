@@ -23,15 +23,15 @@
     Header, navigation and footer
 ----------------------------------------- */
 
+@use 'layout/footer';
 @use 'layout/header';
 @use 'layout/navigation';
-@use 'layout/footer';
 
 /* --------------------------------------
     PAGES
     Page-specific styles
 ----------------------------------------- */
 
+@use 'pages/contact';
 @use 'pages/index';
 @use 'pages/projects';
-@use 'pages/contact';
